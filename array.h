@@ -21,4 +21,12 @@ class Array {
       throw ArrayOutOfRange();
     return array[index];
   }
+
+  type& Front(){
+    return array[0];
+  }
+
+  type& Back(){
+    return array[sz - 1];
+  }
 };
