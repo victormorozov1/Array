@@ -11,4 +11,7 @@ template <typename type, int sz>
 class Array {
  public:
   type array[sz];
+  type& operator[](int index){
+    return array[index];
+  }
 };
