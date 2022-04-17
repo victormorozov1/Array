@@ -29,4 +29,8 @@ class Array {
   type& Back(){
     return array[sz - 1];
   }
+
+  type* Data(){
+    return array;
+  }
 };
