@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
-  Array<int, 0>a{};
-  cout << a.Empty();
+  Array<int, 7>a{};
+  a.Fill(5);
+  cout << a[4];
 }

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdexcept>
+#include <bits/stdc++.h>
 
 class ArrayOutOfRange : public std::out_of_range {
  public:
@@ -40,5 +41,11 @@ class Array {
 
   bool Empty(){
     return !sz;
+  }
+
+  void Fill(const type& value){
+    for (int i = 0; i < sz; i++){
+      array[i] = value;
+    }
   }
 };
