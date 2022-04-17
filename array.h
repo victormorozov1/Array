@@ -33,4 +33,12 @@ class Array {
   type* Data(){
     return array;
   }
+
+  int Size(){
+    return sz;
+  }
+
+  bool Empty(){
+    return !sz;
+  }
 };
