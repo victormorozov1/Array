@@ -11,7 +11,14 @@ template <typename type, int sz>
 class Array {
  public:
   type array[sz];
+
   type& operator[](int index){
+    return array[index];
+  }
+
+  type& At(int index){
+    if (index < 0 || index >= sz)
+      throw ArrayOutOfRange();
     return array[index];
   }
 };
